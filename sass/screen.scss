@@ -1,0 +1,139 @@
+@import "compass/reset";
+
+h1,
+h2 {
+  line-height: 2.25;
+  color: #111;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+p {
+  color: #111;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+body {
+  text-align: center;
+}
+
+#viewport {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+  width: 960px;
+}
+
+#main {
+  float: left;
+  width: 55%;
+}
+
+#secondary {
+  float: right;
+  width: 30%;
+}
+
+#viewport {
+  // Prettifier
+  &.pretty {
+    h1,
+    h2 {
+      font-family: Helvetica, sans-serif;
+    }
+
+    h1 {
+      font-weight: bold;
+    }
+
+    h2 {
+      font-weight: 400;
+    }
+
+    p {
+      color: #555;
+      font-family: Georgia, serif;
+    }
+
+    #secondary {
+      background: #ddd;
+      padding: 3% 5%;
+
+      h2 {
+        color: #666;
+      }
+
+      p {
+        color: #888;
+      }
+    }
+  }
+
+  // Graceful Degradation
+  &.graceful {
+    width: 960px;
+
+    @media (max-width: 900px) {
+      width: 800px;
+    }
+
+    @media (max-width: 768px) {
+      width: 700px;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+
+  // Progressive Enhancement (Mobile-First)
+  &.progressive {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: 700px;
+    }
+
+    @media (min-width: 900px) {
+      width: 800px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 960px;
+    }
+  }
+
+  /* Content Choreography */
+  &.choreography {
+    #main {
+      float: none;
+      width: 90%;
+      margin: 0 auto;
+
+      @media (min-width: 768px) {
+        float: left;
+        width: 55%;
+        margin: 0;
+      }
+    }
+
+    #secondary {
+      float: none;
+      width: 90%;
+      margin: 5% auto 0;
+
+      @media (min-width: 768px) {
+        float: right;
+        width: 30%;
+        margin: 0;
+      }
+    }
+  }
+}
