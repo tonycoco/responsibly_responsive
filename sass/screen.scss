@@ -91,6 +91,8 @@ body {
     @media (max-width: 480px) {
       width: 100%;
     }
+
+    // width: 960px; // ORDER MATTERS!
   }
 
   // Progressive Enhancement (Mobile-First)
@@ -113,7 +115,7 @@ body {
   /* Content Choreography */
   &.choreography {
     #main {
-      float: none;
+      float: none; // Just a reset
       width: 90%;
       margin: 0 auto;
 
@@ -125,7 +127,7 @@ body {
     }
 
     #secondary {
-      float: none;
+      float: none; // Just a reset
       width: 90%;
       margin: 5% auto 0;
 

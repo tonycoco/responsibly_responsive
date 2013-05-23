@@ -137,39 +137,39 @@ body {
       /* line 80, ../sass/screen.scss */
       #viewport.graceful {
         width: 100%; } }
-  /* line 97, ../sass/screen.scss */
+  /* line 99, ../sass/screen.scss */
   #viewport.progressive {
     width: 100%; }
     @media (min-width: 768px) {
-      /* line 97, ../sass/screen.scss */
+      /* line 99, ../sass/screen.scss */
       #viewport.progressive {
         width: 700px; } }
     @media (min-width: 900px) {
-      /* line 97, ../sass/screen.scss */
+      /* line 99, ../sass/screen.scss */
       #viewport.progressive {
         width: 800px; } }
     @media (min-width: 1200px) {
-      /* line 97, ../sass/screen.scss */
+      /* line 99, ../sass/screen.scss */
       #viewport.progressive {
         width: 960px; } }
-  /* line 115, ../sass/screen.scss */
+  /* line 117, ../sass/screen.scss */
   #viewport.choreography #main {
     float: none;
     width: 90%;
     margin: 0 auto; }
     @media (min-width: 768px) {
-      /* line 115, ../sass/screen.scss */
+      /* line 117, ../sass/screen.scss */
       #viewport.choreography #main {
         float: left;
         width: 55%;
         margin: 0; } }
-  /* line 127, ../sass/screen.scss */
+  /* line 129, ../sass/screen.scss */
   #viewport.choreography #secondary {
     float: none;
     width: 90%;
     margin: 5% auto 0; }
     @media (min-width: 768px) {
-      /* line 127, ../sass/screen.scss */
+      /* line 129, ../sass/screen.scss */
       #viewport.choreography #secondary {
         float: right;
         width: 30%;
